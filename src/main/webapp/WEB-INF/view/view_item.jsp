@@ -7,10 +7,6 @@
     <body>
 
         <div align="center" cellpadding="5">
-            <c:url var="addUrl" value="${Mappings.ADD_ITEM}" />
-            <h2><a href="${addUrl}">New Items</a></h2>
-
-
 
             <table border="1">
 
@@ -26,7 +22,7 @@
 
                 </tr>
 
-                <c:forEach var="item" items="${todoData.items}">
+
 
                  <c:url var="editUrl" value="${Mappings.ADD_ITEM}" >
                     <c:param name="id" value="${item.id}" />
@@ -35,11 +31,6 @@
                  <c:url var="deleteUrl" value="${Mappings.DELETE_ITEM}" >
                   <c:param name="id" value="${item.id}" />
                  </c:url>
-                 <c:url var="viewUrl" value="${Mappings.VIEW_ITEM}" >
-                   <c:param name="id" value="${item.id}" />
-                 </c:url>
-
-
 
                         <tr>
                             <td><c:out value="${item.title}"/></td>
@@ -48,11 +39,13 @@
                             <td><c:out value="${item.id}"/></td>
                             <td><a href="${editUrl}">Edit</a></td>
                             <td><a href="${deleteUrl}">Delete</a></td>
-                            <td><a href="${viewUrl}">view</a></td>
                         </tr>
 
-                </c:forEach>
+
             </table>
+
+             <c:url var="itemListUrl" value="${Mappings.ITEMS}" />
+                        <h2><a href="${itemListUrl}">Items</a></h2>
         </div>
 
 
