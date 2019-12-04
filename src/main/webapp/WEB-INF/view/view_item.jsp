@@ -2,7 +2,7 @@
 <%@ page import="org.fedex.util.Mappings" %>
 <html>
     <head>
-        <title>Todo Items</title>
+        <title>Single Todo Item</title>
     </head>
     <body>
 
@@ -10,7 +10,7 @@
 
             <table border="1">
 
-                <caption><h2>Todo Items</h2></caption>
+                <caption><h2>Individual Todo Item</h2></caption>
 
                 <tr>
                     <th>Title</th>
@@ -46,6 +46,7 @@
 
              <c:url var="itemListUrl" value="${Mappings.ITEMS}" />
                         <h2><a href="${itemListUrl}">Items</a></h2>
+
         </div>
 
 
