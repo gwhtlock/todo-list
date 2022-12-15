@@ -13,7 +13,7 @@
     <!--Propeties-->
     <properties>
         <lombok-version>1.18.10</lombok-version>
-        <springWeb-MVC-version>5.2.1.RELEASE</springWeb-MVC-version>
+        <springWeb-MVC-version>5.2.20.RELEASE</springWeb-MVC-version>
         <logback-classic-version>1.2.3</logback-classic-version>
         <javax-annotation-api>1.3.2</javax-annotation-api>
         <java.version>11</java.version>
